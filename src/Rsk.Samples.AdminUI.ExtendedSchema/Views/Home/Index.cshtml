@@ -1,0 +1,20 @@
+﻿@model List<Rsk.Samples.AdminUI.ExtendedSchema.ExtendedUser>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>title</title>
+</head>
+<body>
+<div>
+    <h1>Users in Department 1</h1>
+    <ul>
+        @foreach (var user in Model)
+        {
+            <li>@user.UserName</li>
+        }
+    </ul>
+</div>
+</body>
+</html>
